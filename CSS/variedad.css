@@ -1,0 +1,112 @@
+.panel{
+    float: left;
+    padding: 2rem;
+    margin: 3rem 0 0 12rem;
+    width: 75%;
+    height: auto;
+    background-image: rgb(232,166,44);
+    background-image: linear-gradient(117deg, rgba(232,166,44,1) 0%, rgba(12,133,142,1) 68%, rgba(99,0,181,1) 100%);
+    background-size: 400%;
+    animation: gradi 3s infinite alternate;
+}
+.casilla{
+    position: relative;
+    width: 80%;
+    height: 33rem;
+    background: white;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    padding: 1rem;
+    margin:0 0 3rem 7rem ;
+}
+.contenedor_imagen{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    margin:2rem 0rem 0 26rem ;
+    width: 18rem;
+    height: 28rem;
+    background-color: sandybrown;
+}
+.larga{
+    margin: 0rem 0rem 3rem 1rem;
+    width: 95.5%;
+    height: 67rem;
+}
+.top{
+    float: left;
+    margin: 3rem 0 0 7rem;
+}
+.bot{
+    float: left;
+    margin: 3rem 0 0 15rem;
+}
+.marco{
+    width: 90rem;
+    height: 28rem;
+    margin: 0 0 0 -72rem;
+    position: relative;
+    animation: slide 20s infinite alternate running;
+}
+.bajo{
+    transition: all 1s ;
+}
+
+.imagen{
+    width: 18rem;
+    height: 28rem;
+    position: relative;
+    float: left;
+}
+.imagen img{
+    width: 18rem;
+    height: 28rem;
+}
+.bajo img{
+    width: 18rem;
+    height: 28rem;
+}
+.bajo:hover{
+    transform: rotatey(360deg);
+}
+
+@keyframes gradi {
+    0%{
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
+}
+
+@keyframes slide {
+    0%{
+        left: 0;
+    }
+    12.5%{
+        left: 18rem;
+    }
+    25%{
+        left: 36rem;
+    }
+    37.5%{
+        left: 54rem;
+    }
+    50%{
+        left: 72rem;
+    }
+    62.5%{
+        left: 54rem;
+    }
+    75%{
+        left: 36rem;
+    }
+    87.5%{
+        left: 18rem;
+    }
+    100%{
+        left: 0rem;
+    }  
+}

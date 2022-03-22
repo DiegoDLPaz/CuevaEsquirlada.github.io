@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color: purple;
+}
+header{
+    font-size: xx-large;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    padding : 2rem 0em 1rem;
+    width: 100%;
+    height: auto;
+    background-color: blueviolet;
+    color: sandybrown;
+}
+nav{
+    width: 100%;
+    height: 3.5rem;
+    padding : 0rem 0em 1.5rem;
+    background-color: violet;
+    text-align: center;
+}
+
+nav  li{
+    font-family: fantasy;
+    font-size: larger;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0rem 2.5rem 0em 2.5rem;
+    padding: 1.9rem 3rem;
+    height: 1.15rem;
+    transition: all 500ms ease;
+}
+
+a:hover li{
+    background-color: sandybrown;
+    color: rgb(250, 84, 66);
+}
+
+.content_left{
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    font-size: x-large;
+    padding-left: 1rem;
+    width: 30%;
+    height: 20rem;
+    margin: 3rem 0rem 0rem 4rem;
+    color: salmon;
+}
+
+.content_left h2{
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content_left img{
+    margin-top: 1rem;
+    width: 100%;
+    height: 20rem;
+    box-shadow: #43211F 0 0 25px 12px;
+}
+.content_right{
+    float: right;
+    width: 56%;
+    height: auto ;
+    background-color: salmon;
+    margin: 3rem 4rem 0rem 0rem;
+    padding: 3rem 1.5rem 3rem 1.5rem;
+    border-radius: 10%;
+}
+.content_right h1{
+    font-family: fantasy;
+    font-size: xx-large;
+    margin-left: 14rem;
+    color: #E53F71;
+    text-decoration: underline dotted ;
+}
+
+.italic{
+    font-style: italic;
+}
+acronym{
+    text-decoration: underline;
+}
+h3{
+    font-family: cursive;
+    color: #43211F;
+    font-size: 20px;
+}
+
+.container{
+    text-align: center;
+    float: left;
+    width: 22%;
+    padding: 1.5em;
+    margin-left: 2.6rem;
+    margin-top: 2rem;
+    height: 25rem;
+    background-color: blueviolet;
+    border-radius: 5%;
+    box-shadow: 9px 9px 12px 7px;
+    transition: all 1s; 
+}
+.container img{
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 1.4rem;
+}
+.container a{
+    font-size: larger;
+    padding: 1rem;
+    background-color: sandybrown;
+    text-decoration: underline;
+}
+
+footer{
+    float: left;
+    margin-top: 3rem;
+    width: 100%;
+    height: 3rem;
+    background-color: #43211F;
+}
+.container:hover{
+    transform: scale(1.2);
+}
+.contac{
+    float: left;
+    clear: both;
+    font-size: 3.5rem;
+    font-family: "Balsamiq Sans",cursive;
+    border: sandybrown 4px solid;
+    width: 16%;
+    color: sandybrown;
+    padding: 0.25em 1em;
+    margin: 0rem 0rem 0rem 10rem;
+    margin-top: -7%;
+    border-radius: 0.25em;
+    text-shadow: 0 0 0.125em hsl(0, 0%, 100%),
+    0 0 0.45em sandybrown;
+    box-shadow: inset 0 0 0.5em 0 sandybrown,
+    0 0 0.5em 0 sandybrown;
+}
+.contac::before{
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: sandybrown;
+    width: 22%;
+    height: 4rem;
+    top: 138.5%;
+    bottom: 0;
+    left: 8.5%;
+    right: 0;
+    transform: perspective(1em) rotatex(40deg) scale(1,0.35);
+    filter: blur(1em); 
+}
+.contac:hover{
+    background-color: sandybrown;
+    color: purple;
+    text-shadow: 0;
+}
+.hide{
+    position: absolute;
+    visibility: hidden ;
+}
+.hide{
+    width: 10%;
+}
+
+label img{
+    width: 100%;
+    margin-left: 7%;
+    margin-top: 3%;
+}
+
+@media screen and (max-width:1400px){
+    .content_left{
+        float: left;
+        width: 90%;
+        margin-bottom: 30%;
+    }
+    .content_right{
+        float: right;
+        width: 90%;
+        text-align: center;
+        margin-top: 10%;
+    }
+    .content_right h1{
+        margin-left: 0;
+    }
+    .container{
+        height: 28rem;
+        width: 21%;
+    }
+    .contac{
+        margin-left: 35%;
+        margin-top: 10%;
+        width: 25%;
+    }
+}
+@media screen and (max-width: 900px){
+    .nav li{
+        display: none;
+        
+    }
+    .nav ul{
+        display: flex;
+        flex-direction: column;
+        visibility: hidden;
+    }
+    .contac{
+        margin-left: 25%;
+        margin-top: 10%;
+        width: 35%;
+    }
+    .content_right{
+        float: right;
+        width: 90%;
+        text-align: center;
+        margin-left: 30%;
+        margin-top: 50%;
+    }
+    
+    label.hide{
+        visibility: visible;
+    }
+    input{
+        visibility: hidden;
+    }
+}

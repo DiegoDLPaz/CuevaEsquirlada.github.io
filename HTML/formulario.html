@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anton" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../CSS/formulario.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <h1>La cueva esquirlada</h1>
+    </header>
+    <label class="hide" for="check">
+        <img src="../imagenes/menu.png">
+    </label>
+    <input  class="hide" type="checkbox" id="check">
+    <nav>
+        <ul>
+            <a href="../index.html"><li>Inicio</li></a>
+            <a href="review.html"><li>Reviews</li></a>
+            <a href="variedad.html"><li>Variedad</li></a>
+            <a href="formulario.html"><li>Encuesta</li></a>
+        </ul>
+    </nav>
+    <article>
+        <div class="formu">
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Datos del usuario</legend>
+                    Nombre:
+                    <input type="text" name="nombre" value="" required>
+                    Apellidos:
+                    <input type="text" name="apellidos" required>
+                    Teléfono
+                    <input type="text" name="tfno">
+                </fieldset>
+                <fieldset>
+                    <legend>Para estadística</legend>
+                    <label for="fav">Tipo de libro favorito</label>
+                    <select name="fav" id="fav">
+                        <option value="Elige" selected="selected">--Elige--</option>
+                        <option value="terror">Terror</option>
+                        <option value="fantasia">Fantasía</option>
+                        <option value="scifi">Ciencia ficción</option>
+                        <option value="romance">Romance</option>
+                        <option value="otros">Otros</option>
+                    </select>
+
+                    <label for="leidos">Cuantos libros has leido</label>
+                    <select name="leidos" id="leidos">
+                        <option value="Elige" selected="selected">--Elige--</option>
+                        <option value="Ninguno">Ninguno</option>
+                        <option value="+5">Más de 5</option>
+                        <option value="+10">Más de 10</option>
+                        <option value="+20">Más de 20</option>
+                        <option value="mas">Más</option>
+                    </select>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Mensaje para mí</legend>
+                    <label for="asunto">Asunto del mensaje</label>
+                    <input type="text" id="asunto" name="asunto" value="" required>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                </fieldset>
+
+                <input class="submit" type="submit" name="enviar" value="Enviar datos">
+                <input class="submit" type="reset" name="borrar" value="Borrar">
+            </form>
+        </div>
+    </article>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
